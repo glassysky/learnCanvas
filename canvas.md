@@ -2,6 +2,7 @@
 ###学习之前你需要掌握的
 - html,css,js基础
 - 一定的英文功底（或者有耐心百度）
+
 ###1.The rendering context
 ```javascript
 var convas = document.getElementById('tutorial');
