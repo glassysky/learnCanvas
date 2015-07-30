@@ -69,3 +69,5 @@ if (canvas.getContext){
  </body>
 </html>
 ```
+
+后续深入学习见[canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
