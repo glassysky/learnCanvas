@@ -1,3 +1,4 @@
+#Canvas 学习总结
 ###1.The rendering context
 ```javascript
 var convas = document.getElementById('tutorial');
