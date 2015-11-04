@@ -12,5 +12,9 @@ requirejs.config({
 });
 
 requirejs(['init'],function(init){
-    init.test();
+    window.addEventListener("load",eventWindowLoaded,false);
+
+    function eventWindowLoaded(){
+        canvasApp();
+    }
 });
