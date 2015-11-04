@@ -13,9 +13,5 @@ requirejs.config({
 });
 
 requirejs(['init','modernizr'],function(init){
-    window.addEventListener("load",eventWindowLoaded,false);
 
-    function eventWindowLoaded(){
-        canvasApp();
-    }
 });
