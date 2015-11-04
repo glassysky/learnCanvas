@@ -4,6 +4,7 @@ requirejs.config({
 
     baseUrl: 'js',
     paths: {
+        modernizr : 'lib/modernizr',
         init: 'init'
     },
     shim: {
@@ -11,7 +12,7 @@ requirejs.config({
     }
 });
 
-requirejs(['init'],function(init){
+requirejs(['init','modernizr'],function(init){
     window.addEventListener("load",eventWindowLoaded,false);
 
     function eventWindowLoaded(){
