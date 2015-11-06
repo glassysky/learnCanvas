@@ -5,13 +5,13 @@ requirejs.config({
     baseUrl: 'js',
     paths: {
         modernizr : 'lib/modernizr',
-        init: 'init'
+        init : 'init'
     },
     shim: {
-
+        init : 'init'
     }
 });
 
 requirejs(['init','modernizr'],function(init){
-
+    window.addEventListener("load" ,init.canvasApp, false);
 });
