@@ -15,5 +15,12 @@ define(['jquery'],function($){
 			}
 			document.body.appendChild(canvas);
 		},
+		createTimer : function(ctx,timeout){
+			var timer = {
+				color : "red",
+				timeout : timeout,
+			};
+			return timer;
+		}
 	};
 });
