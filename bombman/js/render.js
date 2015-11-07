@@ -5,8 +5,11 @@ define(['init'],function(init){
 		},
 		draw : function(ctx,num){
 			var cellInfo = init.setCell(num);
+
 			drawGround();
 			drawGrass();
+			drawPlayer();
+
 			function drawGround(){
 				 console.log(cellInfo);
 				 for(var i = 0;i<=cellInfo.cellNum;i++){
@@ -31,6 +34,16 @@ define(['init'],function(init){
 					}
 				}
 				grass.src = "images/background.jpg";
+			}
+			function drawPlayer(){
+				var playerImg1 = new Image();
+				var playerImg1Ready = false;
+				playerImg1.onload = function(){
+					playerImg1Ready = true;
+					ctx.drawImage(playerImg1,0,0,103.8,103.75,1,1,
+						cellInfo.cellLength-2,cellInfo.cellLength-2);
+				}
+				playerImg1.src = "images/sprite.gif";
 			}
 		}
 	};
