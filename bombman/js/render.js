@@ -19,7 +19,9 @@ define(['init'],function(init){
 			}
 			function drawGrass(){
 				var grass = new Image();
+				var grassReady = false;
 				grass.onload = function(){
+					grassReady = true;
 					for(var i = 0;i<=cellInfo.cellNum;i++){
 						for(var j = 0;j<=cellInfo.cellNum;j++){
 							ctx.drawImage(grass,j*cellInfo.cellGap+(j-1)*cellInfo.cellLength+1,
